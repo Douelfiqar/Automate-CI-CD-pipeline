@@ -19,7 +19,7 @@ public class Demo2Application {
         return args -> {
             userRepository.save(Users.builder().username("idriss").passwd("azer").build());
             userRepository.save(Users.builder().username("doo").passwd("1234").build());
-            userRepository.save(Users.builder().username("FC03").passwd("@]*$").build());
+            userRepository.save(Users.builder().username("FC04").passwd("@]*$").build());
         };
     }
 }
