@@ -33,6 +33,10 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    @GetMapping("/test")
+    public String testMessage() {
+        return "Test message";
+    }
 
     // Read One
     @GetMapping("/{id}")
