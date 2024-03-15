@@ -22,21 +22,13 @@ public class UserController {
     }
 
 
-    @GetMapping("/test")
-    public String createUser() {
-        return "test";
-    }
-
     // Read All
     @GetMapping("/")
     public List<Users> getAllUsers() {
         return userRepository.findAll();
     }
 
-    @GetMapping("/test")
-    public String testMessage() {
-        return "Test message";
-    }
+
 
     // Read One
     @GetMapping("/{id}")
